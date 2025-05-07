@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adullam Christian Church</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function mostrarConfirmacion() {
+      const mensaje = document.getElementById('mensaje-confirmacion');
+      mensaje.classList.remove('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Adullam Christian Church</h1>
+      <nav class="space-x-4">
+        <a href="#inicio" class="hover:text-blue-600">Inicio</a>
+        <a href="#quienes-somos" class="hover:text-blue-600">Quiénes Somos</a>
+        <a href="#servicios" class="hover:text-blue-600">Servicios</a>
+        <a href="#eventos" class="hover:text-blue-600">Eventos</a>
+        <a href="#predicaciones" class="hover:text-blue-600">Predicaciones</a>
+        <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+        <a href="#donaciones" class="hover:text-blue-600">Donaciones</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Inicio -->
+  <section id="inicio" class="py-20 bg-blue-50 text-center">
+    <h2 class="text-4xl font-bold mb-4">Bienvenido a Adullam Christian Church</h2>
+    <p class="text-lg">Una familia de fe apasionada por Jesús y su palabra.</p>
+  </section>
+
+  <!-- Quiénes Somos -->
+  <section id="quienes-somos" class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Quiénes Somos</h2>
+    <p class="mb-2">Somos una comunidad cristiana comprometida con la verdad de la Biblia y el amor de Cristo.</p>
+    <p><strong>Misión:</strong> Predicar el evangelio y hacer discípulos.</p>
+    <p><strong>Visión:</strong> Ver vidas transformadas por el poder de Dios.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16 bg-white container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Servicios y Horarios</h2>
+    <ul class="list-disc pl-5">
+      <li>Domingo - Servicio general: 10:00 AM</li>
+      <li>Miércoles - Estudio bíblico: 7:00 PM</li>
+      <li>Viernes - Oración: 7:00 PM</li>
+    </ul>
+  </section>
+
+  <!-- Eventos -->
+  <section id="eventos" class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Eventos</h2>
+    <p>Conferencia de Jóvenes - 20 de Junio, 6:00 PM</p>
+    <p>Bautismos - 15 de Julio</p>
+  </section>
+
+  <!-- Predicaciones -->
+  <section id="predicaciones" class="py-16 bg-white container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Predicaciones</h2>
+    <p>Muy pronto podrás acceder a nuestras predicaciones en línea.</p>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+    <p>Dirección: Calle Esperanza #123, Ciudad de Fe</p>
+    <p>Teléfono: +123 456 7890</p>
+    <p>Email: contacto@adullamchurch.org</p>
+    <form action="https://formspree.io/f/mvgarpgz" method="POST" class="mt-6 space-y-4 max-w-lg" onsubmit="mostrarConfirmacion();">
+      <input type="text" name="nombre" placeholder="Nombre" class="w-full p-2 border rounded" required />
+      <input type="email" name="email" placeholder="Correo electrónico" class="w-full p-2 border rounded" required />
+      <textarea name="mensaje" placeholder="Mensaje" class="w-full p-2 border rounded" rows="4" required></textarea>
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Enviar</button>
+    </form>
+    <p id="mensaje-confirmacion" class="mt-4 text-green-600 hidden">¡Gracias por tu mensaje! Te responderemos pronto.</p>
+  </section>
+
+  <!-- Donaciones -->
+  <section id="donaciones" class="py-16 bg-white container mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-4">Donaciones</h2>
+    <p class="mb-4">Gracias por apoyar el ministerio de Adullam Christian Church. Tus ofrendas hacen la diferencia.</p>
+    <a href="#" class="inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700">Donar Ahora</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 Adullam Christian Church. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
